@@ -99,10 +99,7 @@ git clone git@github.com:ananzhoujiaan/hello-world.git
 分支合并到master:```git merge dev```\
 删除dev分支```git branch -d dev```
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 54f9219c92f509757755620401222e7db87c4b11
 ---
 
 精华笔记\
