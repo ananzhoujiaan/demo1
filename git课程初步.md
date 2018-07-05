@@ -119,3 +119,13 @@ git clone git@github.com:ananzhoujiaan/hello-world.git
 删除分支：git branch -d <name>
 
 ---
+
+**git标签管理**
+
+创建标签
+git branch
+git checkout master
+git tag <name>
+git tag
+
+git tag v1.0 commid filename
