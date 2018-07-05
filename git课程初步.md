@@ -119,7 +119,7 @@ git clone git@github.com:ananzhoujiaan/hello-world.git
 
 **git标签管理**
 
-创建标签
+创建标签\
 git branch\
 git checkout master\
 git tag <name>\
