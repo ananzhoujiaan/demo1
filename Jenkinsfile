@@ -10,6 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'echo "Build"'
+        sh 'docker build -t nginx:test .'
       }
     }
 
@@ -42,5 +43,9 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    env = 'dev'
+    tag = 'test'
   }
 }
