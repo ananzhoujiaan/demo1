@@ -7,5 +7,29 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        sh 'echo "Build"'
+      }
+    }
+
+    stage('Scan') {
+      steps {
+        sh 'echo "Scan"'
+      }
+    }
+
+    stage('get config') {
+      steps {
+        sh 'echo "config"'
+      }
+    }
+
+    stage('deploy') {
+      steps {
+        sh 'echo "deploy"'
+      }
+    }
+
   }
 }
