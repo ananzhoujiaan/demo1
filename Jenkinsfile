@@ -8,9 +8,13 @@ pipeline {
     }
 
     stage('Build') {
+      environment {
+        env = 'dev'
+        tag = 'test'
+      }
       steps {
         sh 'echo "Build"'
-        sh 'docker build -t nginx:test .'
+        sh 'echo "nginx:${tag}"'
       }
     }
 
