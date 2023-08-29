@@ -19,13 +19,24 @@ pipeline {
       }
     }
 
-    stage('get config') {
-      steps {
-        sh 'echo "config"'
+    stage('Harbor') {
+      parallel {
+        stage('Harbor') {
+          steps {
+            sh 'echo "harbor"'
+          }
+        }
+
+        stage('config') {
+          steps {
+            sh 'echo "Get Config"'
+          }
+        }
+
       }
     }
 
-    stage('deploy') {
+    stage('Deploy') {
       steps {
         sh 'echo "deploy"'
       }
